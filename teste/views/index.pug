@@ -1,5 +1,24 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  section.hero
+    h1= title
+    p Bem-vindo ao nosso site! Explore nossas páginas abaixo.
+
+  section.cards
+    div.card
+      h2 Sobre
+      p Conheça mais sobre nosso projeto e nossa história.
+      a.btn(href="/sobre") Acessar
+
+    div.card
+      h2 Produtos
+      p Veja nossa lista de produtos disponíveis.
+      a.btn(href="/produtos") Ver produtos
+
+    div.card
+      h2 Usuários
+      p Veja os usuários cadastrados no sistema.
+      a.btn(href="/users") Ver usuários
+
+
