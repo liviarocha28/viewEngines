@@ -1,12 +1,20 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get('/', function(req, res) {
+  res.render('index', { title: 'ArenaFut' });
 });
-router.get('/sobre', function(req, res, next) {
-  res.render('sobre', { title: 'Você está em Sobre Nós' });
+
+router.get('/sobre', function(req, res) {
+  res.render('sobre', { title: 'Sobre' });
+});
+
+router.get('/agendamentos', function(req, res) {
+  res.render('agendamentos', { title: 'Agendamentos' });
+});
+
+router.get('/alunos', function(req, res) {
+  res.render('alunos', { title: 'Alunos' });
 });
 
 module.exports = router;
